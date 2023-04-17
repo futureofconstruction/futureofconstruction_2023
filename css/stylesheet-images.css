@@ -1,0 +1,169 @@
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- SPLASH IMAGES -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+	#splash-image-02 {
+		background-image: url('../img/future-of-construction-splash-image-02.jpg');
+	}
+
+	#splash-image-03 {
+		background-image: url('../img/future-of-construction-splash-image-03.jpg');
+	}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- ACADEMIC KEYNOTE PROFILE IMAGES -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+	#karla-saldana 		{background-image: url('../img/speaker-photos/Saldana.jpg');}
+	#jeannette-kuo 		{background-image: url('../img/speaker-photos/');}
+	#thomas-wortmann 	{background-image: url('../img/speaker-photos/Wortmann.jpg');}
+	#marco-hutter 		{background-image: url('../img/speaker-photos/Hutter.jpg');}
+	#stefana-parascho 	{background-image: url('../img/speaker-photos/');}
+	#sami-haddadin 		{background-image: url('../img/speaker-photos/');}
+	#harald-kloft 		{background-image: url('../img/speaker-photos/');}
+	#corentin-fivet 	{background-image: url('../img/speaker-photos/');}
+	#charlotte-malterre {background-image: url('../img/speaker-photos/');}
+	#daniel-hall 		{background-image: url('../img/speaker-photos/');}
+	#marija-maric 		{background-image: url('../img/speaker-photos/Maric_image_credit_Antoine_Espinasseau.jpg');}
+	#michael-buhler 	{background-image: url('../img/speaker-photos/');}
+	#mariana-popescu 	{background-image: url('../img/speaker-photos/Popescu.jpg');}
+	#thomas-auer 		{background-image: url('../img/speaker-photos/Auer_image_credit_Tassilo_Letzel_small.jpg');}
+	#brandon-clifford 	{background-image: url('../img/speaker-photos/Clifford.jpg');}
+	#kendra-byrne 		{background-image: url('../img/speaker-photos/');}
+	#siyu-tang 			{background-image: url('../img/speaker-photos/Tang.jpg');}
+	#angela-schoellig 	{background-image: url('../img/speaker-photos/');}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- INDUSTRY INSIGHTS PROFILE IMAGES =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+	#ryan-luke-johns	{background-image: url('../img/speaker-photos/');}
+	#romana-rust		{background-image: url('../img/speaker-photos/Romana_Rust.jpg');}
+	#maximilian-vomhof	{background-image: url('../img/speaker-photos/Maximilian_Vomhof.jpg');}
+	#franziska-sauka	{background-image: url('../img/speaker-photos/Sauka_bw.jpg');}
+	#bruno-knychalla	{background-image: url('../img/speaker-photos/');}
+	#francesco-ranaudo	{background-image: url('../img/speaker-photos/');}
+	#artem-kuchukov		{background-image: url('../img/speaker-photos/');}
+	#ana-anton			{background-image: url('../img/speaker-photos/Anton.jpg');}
+	#thomas-reisinger	{background-image: url('../img/speaker-photos/');}
+	#stefan-leutenegger	{background-image: url('../img/speaker-photos/');}
+	#julian-trummer		{background-image: url('../img/speaker-photos/');}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- VENUE & TRAVEL PROFILE IMAGES -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+	#munich-urban-colab	{background-image: url('../img/future-of-construction-venue-image-01.jpg');}
+	#tum				{background-image: url('../img/future-of-construction-venue-image-02.jpg');}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- ORGANIZER PROFILE IMAGES =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+	#kathrin-dorfler		{background-image: url('../img/speaker-photos/');}
+	#pierluigi-dacunto		{background-image: url('../img/speaker-photos/');}
+	#konrad-nubel			{background-image: url('../img/speaker-photos/');}
+	#christos-chantzaras	{background-image: url('../img/speaker-photos/');}
+	#michael-buhler			{background-image: url('../img/speaker-photos/');}
+	#danielle-griego		{background-image: url('../img/speaker-photos/');}
+	#norman-hack			{background-image: url('../img/speaker-photos/');}
+	#stefana-parascho		{background-image: url('../img/speaker-photos/');}
+	#thomas-wortmann		{background-image: url('../img/speaker-photos/Wortmann.jpg');}
+	#ena-lloret-fritschi	{background-image: url('../img/speaker-photos/');}
+	#lidia-atanasova		{background-image: url('../img/speaker-photos/');}
+	#frederic-chovgi		{background-image: url('../img/speaker-photos/');}
+	#marcel-schlicke		{background-image: url('../img/speaker-photos/');}
+	#selen-ercan			{background-image: url('../img/speaker-photos/');}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- FOOTER LOGO IMAGES =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+	footer div:nth-child(1) {width: 11.11%;}
+	footer div:nth-child(2) {width: 13.11%;}
+	footer div:nth-child(3) {width: 11.11%;}
+	footer div:nth-child(4) {width: 9.11%;}
+	footer div:nth-child(5) {width: 12.11%;}
+	footer div:nth-child(6) {width: 10.11%;}
+	footer div:nth-child(7) {width: 11.11%;}
+	footer div:nth-child(8) {width: 11.11%;}
+	footer div:nth-child(9) {width: 11.11%;}
+
+		.logo-frame {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		#tum-logo {
+			background-image: url('../img/logos/TUM_Logo_weiss_rgb_p.png');
+			background-size: 25%;
+			background-position: 40% center;
+		}
+
+		#venture-labs-logo {
+			background-image: url('../img/logos/VentureLab_Logo_weiss.png');
+			background-size: 60%;
+			background-position: 25% center;
+		}
+
+		#ias-logo {
+			background-image: url('../img/logos/IAS_Logo_weiss_rgb_p.png');
+			background-size: 80%;
+			background-position: 75% center;
+		}
+
+		#eth-logo {
+			background-image: url('../img/logos/ETH_Logo_weiss_rgb_p.png');
+			background-size: 50%;
+			background-position: right center;
+		}
+
+		#usi-logo {
+			background-image: url('../img/logos/USI_Logo_weiss_rgb_p.png');
+			background-size: 20%;
+			background-position: 70% center;
+		}
+
+		#tubs-logo {
+			background-image: url('../img/logos/TUBS_weiss.png');
+			background-size: 40%;
+			background-position: 65% center;
+		}
+
+		#epfl-logo {
+			background-image: url('../img/logos/epfl.png');
+			background-size: 40%;
+		}
+
+		#htwg-konstanz-logo {
+			background-image: url('../img/logos/HTWG_konstanz_weiss.png');
+			background-size: 100%;
+		}
+
+		#uni-stuttgart-logo {
+			background-image: url('../img/logos/UniStuttgart_logo_rgb.png');
+			background-size: 80%;
+		}
+
+		footer div a img {
+			width: 100%;
+			height: 100%;
+		}
+
+			footer div a img {
+				width: 100%;
+				opacity: 0;
+			}

@@ -1,0 +1,64 @@
+/*
+_____________________________
+______ FLASHING YELLOW ______
+_____________________________
+*/
+
+@keyframes flashing-yellow {
+	0% {background-color: transparent;}
+	1% {background-color: rgba(255,255,0,1);}
+	100% {background-color: transparent;}
+}
+
+.flashing-yellow {
+	animation-name: flashing-yellow;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+		-moz-animation-name: flashing-yellow;
+		-moz-animation-duration: 1.5s;
+		-moz-animation-iteration-count: infinite;
+		-ms-animation-name: flashing-yellow;
+		-ms-animation-duration: 1.5s;
+		-ms-animation-iteration-count: infinite;
+		-o-animation-name: flashing-yellow;
+		-o-animation-duration: 1.5s;
+		-o-animation-iteration-count: infinite;
+		-webkit-animation-name: flashing-yellow;
+		-webkit-animation-duration: 1.5s;
+		-webkit-animation-iteration-count: infinite;
+}
+/*
+_____________________________
+______ POP ______
+_____________________________
+*/
+
+@keyframes pop {
+	0% {transform: scale(1.0);}
+	100% {transform: scale(2.0);}
+}
+
+.animation-pop {
+	animation-name: pop;
+	animation-duration: 0.2s;
+	animation-iteration-count: 1;
+}
+
+/*
+___________________________________
+______ TEMPORARILY-DISAPPEAR ______
+___________________________________
+*/
+
+@keyframes temporarily-disappear {
+	0%		{stroke-width: 10;}
+	1%		{stroke-width: 0;}
+	99%		{stroke-width: 0;}
+	100%	{stroke-width: 10;}
+}
+
+.temporarily-disappear {
+	animation-name: temporarily-disappear;
+	animation-duration: 10s;
+	animation-iteration-count: 1;
+}

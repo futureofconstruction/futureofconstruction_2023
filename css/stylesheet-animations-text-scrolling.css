@@ -1,0 +1,26 @@
+/* THE RATIO FOR SCROLLING IS 69 CHARACTER/26.9 EMS */
+/* THE RATIO FOR SPEED IS 69 CHARACTERS/10 SECS */
+
+@keyframes text-scrolling-left {
+	0%		{transform: translateX(0);}
+	100%	{transform: translateX(-26.9em);}
+}
+
+	.animation-text-scrolling-left {
+		animation-name: text-scrolling-left;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+@keyframes text-scrolling-right {
+	0%		{transform: translateX(-26.9em);}
+	100%	{transform: translateX(0);}
+}
+
+	.animation-text-scrolling-right {
+		animation-name: text-scrolling-right;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
