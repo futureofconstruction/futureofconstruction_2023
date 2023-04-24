@@ -431,11 +431,11 @@ section {
 
 	#sponsors ul li {
 		display: inline-block;
-		width: 20%;
-		margin: 2%;
-		padding: 2%;
+		width: 15%;
+		margin: 1%;
+		padding: 1%;
 		text-align: center;
-		vertical-align: top;
+		vertical-align: center;
 	}
 
 		#bau img {
@@ -443,19 +443,19 @@ section {
 		}
 
 		#bmw img {
-			width: 50%;
+			width: 30%;
 		}
 
 		#abb img {
-			width: 50%;
+			width: 60%;
 		}
 
 		#leipfinger_bader img {
-			width: 50%;
+			width: 90%;
 		}
 
 		#fitag img {
-			width: 50%;
+			width: 70%;
 		}
 
 		#sponsors a:link {background-color: initial;}
