@@ -108,7 +108,7 @@
 
 		#tum-logo {
 			background-image: url('../img/logos/TUM_Logo_weiss_rgb_p.png');
-			background-size: 50%;
+			background-size: 25%;
 			background-position: 40% center;
 		}
 
@@ -126,7 +126,7 @@
 
 		#eth-logo {
 			background-image: url('../img/logos/ETH_Logo_weiss_rgb_p.png');
-			background-size: 30%;
+			background-size: 50%;
 			background-position: right center;
 		}
 
