@@ -164,13 +164,13 @@ section {
 
 /*
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-=-=-=- KEYNOTES AND INDUSTRY INSIGHTS -=-=-=
+=-=-=- ACADEMIC KEYNOTES AND INDUSTRY INSIGHTS -=-=-=
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
 
 /*
 -=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-=-=-=- KEYNOTE PROFILE IMAGE STYLES ARE IN THE stylesheet-images.css FILE -=-=-=
+=-=-=- ACADEMIC KEYNOTE PROFILE IMAGE STYLES ARE IN THE stylesheet-images.css FILE -=-=-=
 -=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
 
@@ -180,20 +180,20 @@ section {
 -=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
 
-	#keynotes ul,
+	#academic-keynotes ul,
 	#industry-insights ul {
 		font-size: 18pt;
 		list-style-type: none;
 		text-align: center;
 	}
 
-		#keynotes ul li,
+		#academic-keynotes ul li,
 		#industry-insights ul li {
 			display: inline-block;
 			padding: 1em;
 		}
 
-			#keynotes ul li figure,
+			#academic-keynotes ul li figure,
 			#industry-insights ul li figure {
 				width: 8em;
 				height: 8em;
@@ -204,13 +204,13 @@ section {
 				background-position: center center;
 			}
 
-			#keynotes .name,
+			#academic-keynotes .name,
 			#industry-insights .name {
 				display: block;
 				font-weight: bold;
 			}
 
-				#keynotes .affiliation,#keynotes .location,
+				#academic-keynotes .affiliation,#academic-keynotes .location,
 				#industry-insights .affiliation,#industry-insights .location {
 					font-size: 0.8em;
 				}
