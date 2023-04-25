@@ -19,12 +19,12 @@ html,body {
 }
 
 html,body,summary:hover,figure:hover {
-	cursor: url('../img/arrow-yellow-53px-135deg.png'),pointer;
+	cursor: url('../img/arrow-blue-53px-135deg.png'),pointer;
 }
 
-/* 	section:hover,footer:hover {
+ 	section:hover,footer:hover {
 		cursor: url('../img/arrow-white-53px-135deg.png'),pointer;
-	} */
+	} 
 
 a:link {color: #fff;}
 a:visited {color: #fff;}
