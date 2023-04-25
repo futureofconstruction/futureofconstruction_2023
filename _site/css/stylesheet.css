@@ -1,0 +1,723 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+::-moz-selection {
+	background-color: #ff0;
+	color: #00f;
+}
+
+::selection {
+	background-color: #ff0;
+	color: #00f;
+}
+
+html,body {
+	width: 100%;
+}
+
+html,body,summary:hover,figure:hover {
+	cursor: url('../img/arrow-yellow-53px-135deg.png'),pointer;
+}
+
+/* 	section:hover,footer:hover {
+		cursor: url('../img/arrow-white-53px-135deg.png'),pointer;
+	} */
+
+a:link {color: #fff;}
+a:visited {color: #fff;}
+a:hover {color: #000; background-color: #ff0;}
+a:active {color: #00f; background-color: #fff;}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- COLOR CLASSES -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+.background-color-blue {
+	background-color: #00f;
+}
+
+.background-color-green {
+	background-color: #0f0;
+}
+
+.background-color-white {
+	background-color: #fff;
+}
+
+.color-blue {
+	color: #00f;
+}
+
+.color-white {
+	color: #fff;
+}
+
+/*
+-=-=-=-=-=-=-=-=-=-=
+=-=-=- HEADER =-=-=-
+-=-=-=-=-=-=-=-=-=-=
+*/
+
+header {
+	height: 100vh;
+}
+
+h1 {
+	position: fixed;
+		top: -100vh;
+		left: -100vw;
+}
+
+	h2,h3 {
+		padding: 0.5em 1em;
+		text-align: right;
+		font-size: 21pt;
+		font-weight: normal;
+		position: absolute;
+		z-index: 2;	
+			width: 39.4vw;
+			right: 7.6vw;
+	}
+
+		h2 {
+			bottom: 24vh;
+		}
+
+		h3 {
+			bottom: 12.5vh;
+		}
+
+			h3 a:link {background-color: #00f;color: #fff; text-decoration: none;}
+			h3 a:visited {background-color: #00f;color: #fff; text-decoration: none;}
+			h3 a:hover {background-color: #00f;color: #fff; text-decoration: none;}
+			h3 a:active {background-color: #00f;color: #fff; text-decoration: none;}
+
+/*
+-=-=-=-=-=-=-=-=-=
+=-=-=- MAIN =-=-=-
+-=-=-=-=-=-=-=-=-=
+*/
+
+section {
+	position: relative;
+	margin: 24pt;
+	padding: 24pt;
+	z-index: 100;
+	background-color: #00f;
+	color: #fff;
+}
+
+		h4 {
+			font-size: 48pt;
+			display: inline-block;
+			margin-left: 0.5em;
+			padding: 0.1em 0;
+		}
+
+		section p {
+			font-size: 24pt;
+			margin: 0.5em 0 0.5em 0;
+			width: 24em;
+		}
+
+	details > summary {
+		list-style-type: none;
+		position: sticky;
+		top: 24pt;
+		background-color: #00f;
+	}
+
+	details > summary::-webkit-details-marker {
+		display: none;
+	}
+
+	details > summary::before {
+		content: url('../img/arrow-white-53px-0deg.png');
+		vertical-align: sub;
+		padding-left: 1em;
+	}
+
+	details[open] > summary::before {
+		content: url('../img/arrow-white-53px-270deg.png');
+		vertical-align: sub;
+		padding-left: 1em;
+	}
+
+		details:hover summary {
+			color: #00f;
+			background-color: #fff;
+		}
+
+			details:hover > summary::before {
+				content: url('../img/arrow-blue-53px-0deg.png');
+			}
+
+			details[open]:hover > summary::before {
+				content: url('../img/arrow-blue-53px-270deg.png');
+			}
+
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- ACADEMIC KEYNOTES AND INDUSTRY INSIGHTS -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- ACADEMIC KEYNOTE PROFILE IMAGE STYLES ARE IN THE stylesheet-images.css FILE -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- INDUSTRY INSIGHTS PROFILE IMAGE STYLES ARE IN THE stylesheet-images.css FILE -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+	#academic-keynotes ul,
+	#industry-insights ul {
+		font-size: 18pt;
+		list-style-type: none;
+		text-align: center;
+	}
+
+		#academic-keynotes ul li,
+		#industry-insights ul li {
+			display: inline-block;
+			padding: 1em;
+		}
+
+			#academic-keynotes ul li figure,
+			#industry-insights ul li figure {
+				width: 8em;
+				height: 8em;
+				margin: 1em;
+				border-radius: 50%;
+				background-color: #fff;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			#academic-keynotes .name,
+			#industry-insights .name {
+				display: block;
+				font-weight: bold;
+			}
+
+				#academic-keynotes .affiliation,#academic-keynotes .location,
+				#industry-insights .affiliation,#industry-insights .location {
+					font-size: 0.8em;
+				}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- PROGRAM SECTION -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+	#program article {
+		display: inline-block;
+		width: 31%;
+		padding: 1%;
+		border-right: 1px solid #fff;
+		vertical-align: top;
+	}
+
+		#program article:last-of-type {
+			border: none;
+		}
+
+		#program ol, #program ul {
+			list-style-type: none;
+			padding: 2%;
+			font-size: 14pt;
+		}
+
+			#program h5:first-of-type {
+				font-size: 24pt;
+				text-align: center;
+				position: sticky;
+				top: 4.2em;
+				background-color: #fff;
+				color: #00f;
+			}
+
+				#program h5 time {
+					display: block;
+					font-size: 0.8em;
+					font-weight: normal;
+				}
+
+				#program li {
+					margin-top: 2em;
+				}
+
+				#program li time {
+					display: block;
+					background-color: #fff;
+					color: #00f;
+					padding: 0.2em;
+				}
+
+				#program span {
+					margin-top: 0.2em;
+				}
+
+				#program .program-item {
+					display: block;
+					color: #999;
+				}
+
+				#program .program-detail {
+					font-size: 1.5em;
+				}
+
+				#program .program-session-number {
+					display: block;
+					color: #999;
+				}
+				
+				#program .program-session-title {
+					font-size: 1.5em;
+					color: #00f;
+				}
+
+					#program .program-headers {
+						background-color: #fff;
+						padding: 0.2em;
+						position: sticky;
+						top: 12em;
+					}
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- WORKSHOPS SECTION -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+#workshops ol {
+		list-style-type: none;
+		font-size: 14pt;
+	}
+
+	#workshops ol li {
+		vertical-align: top;
+		width: 29%;
+		padding: 2%;
+		display: inline-block;
+		}
+
+		.workshop-number,.workshop-description {
+			display: block;
+		}
+
+		.workshop-number {
+			font-weight: normal;
+			background-color: #fff;
+			color: #00f;
+			padding: 0.2em;
+			margin-bottom: 0.5em;
+		}
+
+		.workshop-title {
+			font-size: 24pt;
+		}
+
+		.workshop-description {
+			margin: 0.5em 0 1.5em 0;
+			color: #fff;
+		}
+
+		.workshop-lead {
+			border-top: 1px solid #fff;
+			padding-top: 0.5em;
+			margin-top: 0.5em;
+		}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- SITE VISITS AND TOURS SECTION -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+#site-visits-and-tours ul {
+		list-style-type: none;
+		font-size: 14pt;
+	}
+
+	#site-visits-and-tours ul li {
+		vertical-align: top;
+		width: 29%;
+		padding: 2%;
+		display: inline-block;
+	}
+
+		.site-visit-detail,.site-visit-description {
+			display: block;
+		}
+
+		.site-visit-detail {
+			font-weight: normal;
+			background-color: #fff;
+			color: #00f;
+			padding: 0.2em;
+			margin-bottom: 0.5em;
+		}
+
+		.site-visit-title {
+			font-size: 24pt;
+		}
+
+		.site-visit-description {
+			margin: 0.5em 0 1.5em 0;
+			color: #fff;
+		}
+
+		.site-visit-more-details {
+			border-top: 1px solid #fff;
+			padding-top: 0.5em;
+			margin-top: 0.5em;
+		}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- VENUE & TRAVEL =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- VENUE & TRAVEL MUNICH IMAGE STYLES ARE IN THE stylesheet-images.css FILE -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+#venue-and-travel h5 {
+	padding: 0.2em;
+	font-size: 48pt;
+	color: #00f;
+	background-color: #fff;
+	position: sticky;
+	top: 96pt;
+}
+
+	#venue-and-travel figure {
+		display: inline-block;
+		width: 49%;
+		height: 30vw;
+		background-size: cover;
+		background-position: center center;
+		margin: 2% 0;
+	}
+
+		#venue-and-travel figure:first-of-type {
+			margin-right: 2%;
+
+		}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- SPONSORS =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+#sponsors ul {
+	list-style-type: none;
+}
+
+	#sponsors ul li {
+		display: inline-block;
+		width: 15%;
+		margin: 1%;
+		padding: 1%;
+		text-align: center;
+		vertical-align: center;
+	}
+
+		#bau img {
+			width: 120%;
+		}
+
+		#bmw img {
+			width: 30%;
+		}
+
+		#abb img {
+			width: 70%;
+		}
+
+		#leipfinger_bader img {
+			width: 90%;
+		}
+
+		#additive_tectonics img {
+			width: 35%;
+		}
+
+		#sponsors a:link {background-color: initial;}
+		#sponsors a:visited {background-color: initial;}
+		#sponsors a:hover {background-color: initial;}
+		#sponsors a:active {background-color: initial;}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- SUPPORTING INSTITUTIONS SECTION =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+#supporting-institutions ul {
+	list-style-type: none;
+}
+
+	#supporting-institutions ul li {
+		display: inline-block;
+		width: 15%;
+		margin: 1%;
+		padding: 1%;
+		text-align: center;
+		vertical-align: center;
+	}
+
+		#dfg img {
+			width: 120%;
+		}
+
+
+		#supporting-institutions a:link {background-color: initial;}
+		#supporting-institutions a:visited {background-color: initial;}
+		#supporting-institutions a:hover {background-color: initial;}
+		#supporting-institutions a:active {background-color: initial;}
+
+		
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- ORGANIZERS SECTION =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- ORGANIZER PROFILE IMAGE STYLES ARE IN THE stylesheet-images.css FILE -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+	#organizers h5 {
+		background-color: #fff;
+		color: #00f;
+		font-size: 36pt;
+		padding: 0.5em;
+		margin: 1em;
+		text-align: center;
+	}
+
+	#organizers ul {
+		list-style-type: none;
+		text-align: center;
+	}
+
+		#organizers ul li {
+			width: 24%;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+			#organizers ul li figure {
+				width: 8em;
+				height: 8em;
+				margin: 1em auto 1em auto;
+				border-radius: 50%;
+				background-color: #fff;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			#organizers .name {
+				font-size: 18pt;
+				display: block;
+				font-weight: bold;
+			}
+
+			#organizers .title {
+				display: block;
+			}
+
+			#organizers .affiliation {
+			}
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- SPLASH SECTION =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- ADDITIONAL SPLASH SECTION IMAGE STYLES ARE IN THE stylesheet-images.css FILE =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+section#splash-images {
+	margin: 24pt 0;
+	padding: 24pt 0;
+	width: 100%;
+	height: 100vh;
+}
+
+#splash-image-01 {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-image: url('../img/future-of-construction-splash-image-01.jpg');
+}
+
+/*
+-=-=-=-=-=-=-=-=-=-=
+=-=-=- FOOTER =-=-=-
+-=-=-=-=-=-=-=-=-=-=
+*/
+
+/*
+-=-=-=-=-=-=-=-=-=-=
+=-=-=- FOOTER LOGO IMAGE STYLES ARE IN THE stylesheet-images.css FILE -=-=-=
+-=-=-=-=-=-=-=-=-=-=
+*/
+
+footer {
+	position: relative;
+	z-index: 101;
+}
+
+footer ul {
+	text-align: center;
+}
+
+footer ul li {
+	padding: 1.5% 2% 1.5% 2%;
+	margin: 1.5% 2% 1.5% 2%;
+	width: 10%;
+	height: 30px;
+	display: inline-block;
+}
+
+	footer ul li img {
+		height: 100%;
+	}
+
+	footer a:link {background-color: initial;}
+	footer a:visited {background-color: initial;}
+	footer a:hover {background-color: initial;}
+	footer a:active {background-color: initial;}
+
+		
+
+			h6 {
+				font-size: 0.8em;
+				font-weight: normal;
+				text-align: right;
+				padding: 2.5vw 5vw 2.5vw 0;
+				border-top: 0.2vw solid #fff;
+				margin-bottom: 0.5vw;
+			}
+
+/*
+-=-=-=-=-=-=-=-=-=-=
+=-=-=- ARROWS =-=-=-
+-=-=-=-=-=-=-=-=-=-=
+*/
+div#arrows-background {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+}
+
+	div#arrows-background figure {
+		display: block;
+		height: 11.111111111111111vh;
+		z-index: 101;
+	}
+
+		div#arrows-background figure:first-child {
+			margin-top: 2vh;
+		}
+
+	div#arrows-background figure svg {
+		display: inline-block;
+		width: 3.6vw;
+		margin-left: 2.18vw;
+		fill: none;
+		stroke-width: 10;
+		stroke-linecap: round;
+		stroke-miterlimit: 10;
+			transition: transform 0.1s;
+	}
+
+			/*div#arrows-background svg:hover {
+				transform: scale(1.1);
+			}
+
+			div#arrows-background svg:active {
+				transform: scale(1.5);
+			}*/
+
+		div#arrows-background figure.no-rotate svg {
+			transform: rotate(0deg);
+		}
+
+			/*div#arrows-background figure.no-rotate svg:hover {
+				transform: rotate(0deg)scale(1.1);
+			}
+
+			div#arrows-background figure.no-rotate svg:active{
+				transform: rotate(0deg)scale(1.5);
+			}*/
+
+	.stroke-black {
+		stroke: #000;
+	}
+
+		.stroke-black:hover {
+			stroke: #00f;
+		}
+
+	.stroke-red {
+		stroke: #f00;
+	}
+
+	.stroke-green {
+		stroke: #0f0;
+	}
+
+		.stroke-green:hover {
+			stroke: #000;
+		}
+
+	.stroke-blue {
+		stroke: #00f;
+	}
+
+		.stroke-blue:hover {
+			stroke: #000;
+		}
+
+	#future-letter-one,#future-letter-two,#future-letter-three,#future-letter-four,#future-letter-five,#future-letter-six,#of-letter-one,#of-letter-two,#construction-letter-one,#construction-letter-two,#construction-letter-three,#construction-letter-four,#construction-letter-five,#construction-letter-six,#construction-letter-seven,#construction-letter-eight,#construction-letter-nine,#construction-letter-ten,#construction-letter-eleven,#construction-letter-twelve {
+		transform: rotate(0deg);
+	}
+
+	.opacity-zero {
+		opacity: 0;
+		animation: fade-in 2s 1;
+	}
+
+	.opacity-one {
+		opacity: 1.0;
+	}
