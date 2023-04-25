@@ -439,7 +439,7 @@ section {
 	}
 
 		#bau img {
-			width: 100%;
+			width: 120%;
 		}
 
 		#bmw img {
@@ -447,15 +447,15 @@ section {
 		}
 
 		#abb img {
-			width: 60%;
+			width: 70%;
 		}
 
 		#leipfinger_bader img {
 			width: 90%;
 		}
 
-		#fitag img {
-			width: 70%;
+		#additive_tectonics img {
+			width: 35%;
 		}
 
 		#sponsors a:link {background-color: initial;}
@@ -463,6 +463,36 @@ section {
 		#sponsors a:hover {background-color: initial;}
 		#sponsors a:active {background-color: initial;}
 
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- SUPPORTING INSTITUTIONS SECTION =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+#supporting-institutions ul {
+	list-style-type: none;
+}
+
+	#supporting-institutions ul li {
+		display: inline-block;
+		width: 15%;
+		margin: 1%;
+		padding: 1%;
+		text-align: center;
+		vertical-align: center;
+	}
+
+		#dfg img {
+			width: 120%;
+		}
+
+
+		#supporting-institutions a:link {background-color: initial;}
+		#supporting-institutions a:visited {background-color: initial;}
+		#supporting-institutions a:hover {background-color: initial;}
+		#supporting-institutions a:active {background-color: initial;}
+
+		
 /*
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 =-=-=- ORGANIZERS SECTION =-=-=-
