@@ -458,6 +458,16 @@ div#arrows-background {
 		height: 60vw;
 	}
 
+	section#splash-images {
+		height: 50vh;
+		margin-bottom: 38vh;
+	}
+
+	#splash-image-01 {
+		height: 50vh;
+		margin-bottom: 38vh;
+	}
+
 		/*section p:first-child {
 			font-size: 14pt;
 		}*/
@@ -522,5 +532,19 @@ div#arrows-background {
 
 	section {
 		top: 50vh;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+	section#splash-images {
+		margin-bottom: 58vh;
+	}
+
+	#splash-image-01 {
+		margin-bottom: 58vh;
+	}
 
 }
