@@ -122,7 +122,7 @@ section {
 		section p {
 			font-size: 24pt;
 			margin: 0.5em 0 0.5em 0;
-			width: 24em;
+			max-width: 24em;
 		}
 
 	details > summary {
@@ -142,23 +142,23 @@ section {
 		padding-left: 1em;
 	}
 
+		details:hover > summary::before {
+			content: url('../img/arrow-blue-53px-0deg.png');
+		}
+
 	details[open] > summary::before {
 		content: url('../img/arrow-white-53px-270deg.png');
 		vertical-align: sub;
 		padding-left: 1em;
 	}
 
-		details:hover summary {
-			color: #00f;
-			background-color: #fff;
+		details[open]:hover > summary::before {
+			content: url('../img/arrow-blue-53px-270deg.png');
 		}
 
-			details:hover > summary::before {
-				content: url('../img/arrow-blue-53px-0deg.png');
-			}
-
-			details[open]:hover > summary::before {
-				content: url('../img/arrow-blue-53px-270deg.png');
+			details:hover summary {
+				color: #00f;
+				background-color: #fff;
 			}
 
 
@@ -310,7 +310,7 @@ section {
 		width: 29%;
 		padding: 2%;
 		display: inline-block;
-		}
+	}
 
 		.workshop-number,.workshop-description {
 			display: block;
@@ -320,7 +320,7 @@ section {
 			font-weight: normal;
 			background-color: #fff;
 			color: #00f;
-			padding: 0.2em;
+			padding: 0.5em;
 			margin-bottom: 0.5em;
 		}
 
@@ -366,7 +366,7 @@ section {
 			font-weight: normal;
 			background-color: #fff;
 			color: #00f;
-			padding: 0.2em;
+			padding: 0.5em;
 			margin-bottom: 0.5em;
 		}
 
@@ -383,41 +383,6 @@ section {
 			border-top: 1px solid #fff;
 			padding-top: 0.5em;
 			margin-top: 0.5em;
-		}
-
-/*
--=-=-=-=-=-=-=-=-=-=-=-=-=-=
-=-=-=- VENUE & TRAVEL =-=-=-
--=-=-=-=-=-=-=-=-=-=-=-=-=-=
-*/
-
-/*
--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-=-=-=- VENUE & TRAVEL MUNICH IMAGE STYLES ARE IN THE stylesheet-images.css FILE -=-=-=
--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-*/
-
-#venue-and-travel h5 {
-	padding: 0.2em;
-	font-size: 48pt;
-	color: #00f;
-	background-color: #fff;
-	position: sticky;
-	top: 96pt;
-}
-
-	#venue-and-travel figure {
-		display: inline-block;
-		width: 49%;
-		height: 30vw;
-		background-size: cover;
-		background-position: center center;
-		margin: 2% 0;
-	}
-
-		#venue-and-travel figure:first-of-type {
-			margin-right: 2%;
-
 		}
 
 /*
@@ -465,9 +430,9 @@ section {
 		#sponsors a:active {background-color: initial;}
 
 /*
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-=-=-=- SUPPORTING INSTITUTIONS SECTION =-=-=-
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=-=- SUPPORTING INSTITUTIONS SECTION -=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
 
 #supporting-institutions ul {
@@ -487,13 +452,45 @@ section {
 			width: 120%;
 		}
 
-
 		#supporting-institutions a:link {background-color: initial;}
 		#supporting-institutions a:visited {background-color: initial;}
 		#supporting-institutions a:hover {background-color: initial;}
 		#supporting-institutions a:active {background-color: initial;}
 
-		
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- VENUE & TRAVEL =-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- VENUE & TRAVEL MUNICH IMAGE STYLES ARE IN THE stylesheet-images.css FILE -=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+#venue-and-travel h5 {
+	padding: 0.2em;
+	font-size: 48pt;
+	color: #00f;
+	background-color: #fff;
+	position: sticky;
+	top: 96pt;
+}
+
+	#venue-and-travel figure {
+		display: inline-block;
+		width: 49%;
+		height: 30vw;
+		background-size: cover;
+		background-position: center center;
+		margin: 2% 0;
+	}
+
+		#venue-and-travel figure:first-of-type {
+			margin-right: 2%;
+		}
+
 /*
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 =-=-=- ORGANIZERS SECTION =-=-=-
@@ -606,16 +603,15 @@ footer ul li {
 	display: inline-block;
 }
 
-	footer ul li img {
-		height: 100%;
+	footer img {
+		width: 0;
+		height: 0;
 	}
 
 	footer a:link {background-color: initial;}
 	footer a:visited {background-color: initial;}
 	footer a:hover {background-color: initial;}
 	footer a:active {background-color: initial;}
-
-		
 
 			h6 {
 				font-size: 0.8em;

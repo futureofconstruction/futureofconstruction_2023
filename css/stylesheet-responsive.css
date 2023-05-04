@@ -105,11 +105,45 @@ h2,h3 {
 
 @media screen and (max-width: 1025px) {
 
-	/** {
-		background-color: red;
+	h2,h3 {
+		width: 54vw;
+			right: 4vw;
+	}
+
+		h2 {
+			bottom: 20vh;
+			padding: 0.5em 1em;
+		}
+
+		h3 {
+			bottom: 8vh;
+			padding: 1em 1em;
+		}
+
+	section:first-child {
+		margin-top: 25vh;
+	}
+
+	#academic-keynotes ul li figure,
+	#industry-insights ul li figure {
+		margin: 1em 0.3em;
+	}
+
+	#workshops ol li,
+	#site-visits-and-tours ul li {
+		width: 44%;
+		padding: 4% 2%;
+	}
+
+	#venue-and-travel h5 {
+		margin-top: 1em;
+	}
+
+	/*footer img {
+		padding: 2.5vw;
 	}*/
 
-figure#arrows-row-one svg:nth-child(9),figure#arrows-row-one svg:nth-child(10),figure#arrows-row-one svg:nth-child(11),figure#arrows-row-one svg:nth-child(12),figure#arrows-row-one svg:nth-child(13),figure#arrows-row-one svg:nth-child(14),figure#arrows-row-one svg:nth-child(15),figure#arrows-row-one svg:nth-child(16),
+	figure#arrows-row-one svg:nth-child(9),figure#arrows-row-one svg:nth-child(10),figure#arrows-row-one svg:nth-child(11),figure#arrows-row-one svg:nth-child(12),figure#arrows-row-one svg:nth-child(13),figure#arrows-row-one svg:nth-child(14),figure#arrows-row-one svg:nth-child(15),figure#arrows-row-one svg:nth-child(16),
 figure#arrows-row-two svg:nth-child(9),figure#arrows-row-two svg:nth-child(10),figure#arrows-row-two svg:nth-child(11),figure#arrows-row-two svg:nth-child(12),figure#arrows-row-two svg:nth-child(13),figure#arrows-row-two svg:nth-child(14),figure#arrows-row-two svg:nth-child(15),figure#arrows-row-two svg:nth-child(16),
 figure#arrows-row-three svg:nth-child(9),figure#arrows-row-three svg:nth-child(10),figure#arrows-row-three svg:nth-child(11),figure#arrows-row-three svg:nth-child(12),figure#arrows-row-three svg:nth-child(13),figure#arrows-row-three svg:nth-child(14),figure#arrows-row-three svg:nth-child(15),figure#arrows-row-three svg:nth-child(16),
 figure#arrows-row-four svg:nth-child(9),figure#arrows-row-four svg:nth-child(10),figure#arrows-row-four svg:nth-child(11),figure#arrows-row-four svg:nth-child(12),figure#arrows-row-four svg:nth-child(13),figure#arrows-row-four svg:nth-child(14),figure#arrows-row-four svg:nth-child(15),figure#arrows-row-four svg:nth-child(16),
@@ -144,33 +178,8 @@ div#arrows-background {
 			stroke-width: 7.5;
 			stroke-miterlimit: 7.5;
 		}
-
-	h2,h3 {
-		width: 54vw;
-			right: 4vw;
-	}
-
-		h2 {
-			bottom: 20vh;
-			padding: 0.5em 1em;
-		}
-
-		h3 {
-			bottom: 8vh;
-			padding: 1em 1em;
-		}
-
-	section {
-		margin-top: 25vh;
-	}
-
-	/*footer img {
-		padding: 2.5vw;
-	}*/
 	
 }
-
-
 
 @media screen and (max-width: 1025px) and (max-height: 1367px) {
 
@@ -230,10 +239,11 @@ div#arrows-background {
 
 @media screen and (max-width: 834px) {
 
-figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),figure#arrows-row-six svg:nth-child(11),figure#arrows-row-six svg:nth-child(12),figure#arrows-row-six svg:nth-child(13),figure#arrows-row-six svg:nth-child(14),figure#arrows-row-six svg:nth-child(15),figure#arrows-row-six svg:nth-child(16) {
-	margin-top: 4vh;
-}
+	figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),figure#arrows-row-six svg:nth-child(11),figure#arrows-row-six svg:nth-child(12),figure#arrows-row-six svg:nth-child(13),figure#arrows-row-six svg:nth-child(14),figure#arrows-row-six svg:nth-child(15),figure#arrows-row-six svg:nth-child(16) {
+		margin-top: 4vh;
+	}
 
+}
 
 /* -=-=-=-=-=-=-=-=-=-=-=-
 -=-=-= LARGE MOBILE -=-=-=
@@ -241,14 +251,10 @@ figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),f
 
 @media screen and (max-width: 768px) {
 
-figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),figure#arrows-row-six svg:nth-child(11),figure#arrows-row-six svg:nth-child(12),figure#arrows-row-six svg:nth-child(13),figure#arrows-row-six svg:nth-child(14),figure#arrows-row-six svg:nth-child(15),figure#arrows-row-six svg:nth-child(16) {
-	margin-top: 4vh;
-}
-
 	h2,h3 {
 		width: 75vw;
 		margin-left: 10vw;
-			padding: 0.5em 1em;
+		padding: 0.5em 1em;
 	}
 
 		h2 {
@@ -260,23 +266,48 @@ figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),f
 		}
 
 	section {
-		margin: 2em;
-		padding: 2em;
-		width: 50vw;
+		margin: 2% 2% 4% 2%;
+		padding: 2%;
+		width: 88vw;
 		column-count: 1;
-		font-size: 21pt;
 	}
+
+	details > summary::before {
+		content: url('../img/arrow-white-38px-0deg.png');
+		
+	}
+
+		details:hover > summary::before {
+			content: url('../img/arrow-blue-38px-0deg.png');
+		}
+
+	details[open] > summary::before {
+		content: url('../img/arrow-white-38px-270deg.png');
+		
+	}
+
+		details[open]:hover > summary::before {
+			content: url('../img/arrow-blue-38px-270deg.png');
+		}
+
+	h4,
+	#venue-and-travel h5,
+	#organizers h5 {
+		font-size: 7vw;
+	}
+
+		#supporting-institutions h4 {
+			font-size: 6vw;
+		}
 
 		/*section p:first-child {
 			font-size: 24pt;
 		}*/
 
-	footer div {
-		height: 30vw;
-	}
-
-	footer div:nth-child(1),footer div:nth-child(2),footer div:nth-child(3),footer div:nth-child(4),footer div:nth-child(5),footer div:nth-child(6),footer div:nth-child(7),footer div:nth-child(8),footer div:nth-child(9) {
+	footer li:nth-child(1),footer li:nth-child(2),footer li:nth-child(3),footer li:nth-child(4),footer li:nth-child(5),footer li:nth-child(6),footer li:nth-child(7),footer li:nth-child(8),footer li:nth-child(9) {
 		width: 100%;
+		height: 10vw;
+		margin: 2em 0;
 	}
 
 	#tum-logo, #venture-labs-logo, #ias-logo, #eth-logo, #usi-logo, #tubs-logo {
@@ -286,14 +317,11 @@ figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),f
 	h6 {
 		text-align: center;
 		font-size: 1.4em;
-		transform: translateY(10vw);
-		padding-bottom: 10vw;
+		padding: 10vw;
 	}
 
 			h6:last-child {
 				border-top: 0.5vw solid #fff;
-				padding: 10vw 10vw 20vw 10vw;
-				margin-bottom: 0;
 			}
 
 	/*footer img {
@@ -310,19 +338,19 @@ figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),f
 			padding: 6vw;
 		}*/
 
+	figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),figure#arrows-row-six svg:nth-child(11),figure#arrows-row-six svg:nth-child(12),figure#arrows-row-six svg:nth-child(13),figure#arrows-row-six svg:nth-child(14),figure#arrows-row-six svg:nth-child(15),figure#arrows-row-six svg:nth-child(16) {
+		margin-top: 4vh;
+	}
+
 }
 
 /*
--=-=-=-=-=-=-=-=-=-=-
-=-=-=- SMALL MOBILE =-=-=-=
--=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=- SMALL MOBILE =-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 */
 
 @media screen and (max-width: 414px) {
-
-figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),figure#arrows-row-six svg:nth-child(11),figure#arrows-row-six svg:nth-child(12),figure#arrows-row-six svg:nth-child(13),figure#arrows-row-six svg:nth-child(14),figure#arrows-row-six svg:nth-child(15),figure#arrows-row-six svg:nth-child(16) {
-	margin-top: 5.5vh;
-}
 
 	h2,h3 {
 		width: 60vw;
@@ -340,11 +368,90 @@ figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),f
 		}
 
 	section {
-		margin-top: 55vh;
-		padding: 1.5em 0.5em 1.5em 1.5em;
-		width: 70%;
+		top: 30vh;
+		padding: 5%;
+		width: 90%;
 		column-count: 1;
-		font-size: 13pt;
+	}
+
+	details > summary::before {
+		content: url('../img/arrow-white-26px-0deg.png');
+		padding-left: 0.5em;
+	}
+
+		details:hover > summary::before {
+			content: url('../img/arrow-blue-26px-0deg.png');
+		}
+
+	details[open] > summary::before {
+		content: url('../img/arrow-white-26px-270deg.png');
+		padding-left: 0.5em;
+	}
+
+		details[open]:hover > summary::before {
+			content: url('../img/arrow-blue-26px-270deg.png');
+		}
+
+	section p {
+		font-size: 18pt;
+		padding-right: 10%;
+	}
+
+	#academic-keynotes ul li,
+	#industry-insights ul li {
+		padding: 0;
+	}
+
+		#academic-keynotes ul li figure,
+		#industry-insights ul li figure {
+			width: 60vw;
+			height: 60vw;
+			margin: 1em;
+		}
+
+	#workshops ol li,
+	#site-visits-and-tours ul li {
+		width: 90%;
+		padding: 0 10% 0 0;
+		margin-top: 2em;
+	}
+
+	#sponsors ul li {
+		width: 20%;
+		margin: 3%;
+		padding: 3%;
+	}
+
+	#supporting-institutions ul li {
+		width: 50%;
+		margin: 3%;
+		padding: 3%;
+	}
+
+	#venue-and-travel figure {
+		width: 100%;
+		height: 60vw;
+		background-size: cover;
+		background-position: center center;
+		margin: 2% 0;
+	}
+
+		#venue-and-travel figure:first-of-type {
+			margin-right: 0;
+		}
+
+			#venue-and-travel h5 {
+				top: 72pt;
+			}
+
+	#organizers ul li {
+		width: 100%;
+	}
+
+	#organizers ul li figure {
+		margin: 1em auto;
+		width: 60vw;
+		height: 60vw;
 	}
 
 		/*section p:first-child {
@@ -367,6 +474,10 @@ figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),f
 				margin-bottom: 10vw;
 			}*/
 
+	figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),figure#arrows-row-six svg:nth-child(11),figure#arrows-row-six svg:nth-child(12),figure#arrows-row-six svg:nth-child(13),figure#arrows-row-six svg:nth-child(14),figure#arrows-row-six svg:nth-child(15),figure#arrows-row-six svg:nth-child(16) {
+		margin-top: 5.5vh;
+	}
+
 }
 
 @media screen and (max-width: 414px) and (max-height: 569px) {
@@ -380,7 +491,7 @@ figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),f
 		}
 
 	section {
-		margin-top: 88vh;
+		top: 50vh;
 	}
 
 }
@@ -406,6 +517,6 @@ figure#arrows-row-six svg:nth-child(9),figure#arrows-row-six svg:nth-child(10),f
 		}
 
 	section {
-		margin-top: 80vh;
+		top: 50vh;
 
 }
