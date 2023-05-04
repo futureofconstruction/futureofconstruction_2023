@@ -97,6 +97,10 @@ h2,h3 {
 		right: 4.6vw;
 	}
 
+	#splash-image-01 {
+		background-attachment: initial;
+	}
+
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-
@@ -305,9 +309,9 @@ div#arrows-background {
 		}*/
 
 	footer li:nth-child(1),footer li:nth-child(2),footer li:nth-child(3),footer li:nth-child(4),footer li:nth-child(5),footer li:nth-child(6),footer li:nth-child(7),footer li:nth-child(8),footer li:nth-child(9) {
-		width: 100%;
+		width: 90%;
 		height: 10vw;
-		margin: 2em 0;
+		margin: 4% 0;
 	}
 
 	#tum-logo, #venture-labs-logo, #ias-logo, #eth-logo, #usi-logo, #tubs-logo {
@@ -370,7 +374,7 @@ div#arrows-background {
 	section {
 		top: 30vh;
 		padding: 5%;
-		width: 90%;
+		width: 84%;
 		column-count: 1;
 	}
 
